@@ -8,6 +8,8 @@ import TeacherPage from "./Pages/Teacher page/TeacherPage";
 import CoursesPage from "./Pages/Courses";
 import ContactPage from "./Pages/Contact Page/ContactPage";
 import PricingCard from "./Pricing Plan/Pricing";
+import MaleTeacher from "./Pages/Male Teacher/MaleTeacher";
+import FeMaleTeacher from "./Pages/Female Teacher/FemaleTeacher";
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
             <Route path="/contact" element={<ContactPage />}></Route>
             <Route path="/teachers" element={<TeacherPage />}></Route>
             <Route path="/pricing" element={<PricingCard />}></Route>
+            <Route path="/maleteacher" element={<MaleTeacher />}></Route>
+            <Route path="/femaleteacher" element={<FeMaleTeacher />}></Route>
           </Routes>
           <Footer />
         </div>

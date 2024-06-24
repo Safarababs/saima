@@ -9508,8 +9508,327 @@ h6,
   color: #006daf;
 }
 
+.TeacherQualityCards {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.card {
+  background-color: #e6f0ed;
+  color: #006daf;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card i {
+  font-size: 50px;
+  margin: 10px;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.card p {
+  margin: 10px;
+  padding: 10px;
+}
+
 .contact-form .help-block ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.banner {
+  background-color: #2ecc71; /* Green background color */
+  width: 33px; /* Assuming a width of 33px based on a 72 dpi resolution */
+  height: 50px; /* Assuming a height of 50px based on a 72 dpi resolution */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* White text color */
+}
+
+.banner h1 {
+  font-size: 14px; /* Adjust the font size as needed */
+  margin: 0;
+  padding: 0;
+}
+
+.banner p {
+  font-size: 10px; /* Adjust the font size as needed */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+.container .heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.container .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container .card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  height: 400px;
+  width: 300px;
+}
+.container .card:hover {
+  transform: scale(1.05);
+}
+.container .card img {
+  width: 100%;
+  height: auto;
+}
+.container .card .card-content {
+  padding: 10px;
+}
+.container .card .card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.container .card .card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.container .card .card-content a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.container .card .card-content a:hover {
+  background-color: #45a049;
+}
+@media (max-width: 768px) {
+  .container .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .container .heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container .heading {
+    font-size: 18px;
+  }
+  .container .card-content h3 {
+    font-size: 16px;
+  }
+  .container .card-content p {
+    font-size: 12px;
+  }
+  .container .card-content a {
+    padding: 8px 16px;
+  }
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+.container .heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.container .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container .card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  height: 450px;
+  width: 450px;
+}
+.container .card:hover {
+  transform: scale(1.05);
+}
+.container .card img {
+  width: 100%;
+  height: auto;
+}
+.container .card .card-content {
+  padding: 10px;
+}
+.container .card .card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.container .card .card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.container .card .card-content a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.container .card .card-content a:hover {
+  background-color: #45a049;
+}
+@media (max-width: 1200px) {
+  .container .card {
+    width: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .container .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .container .heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  .container .heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .container .card {
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 15px;
+    height: 370px;
+  }
+  .container .card-content {
+    padding: 5px;
+  }
+  .container .card-content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .container .card-content p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .container .card-content a {
+    padding: 8px 16px;
+  }
+}
+
+.header {
+  background: #006daf;
+  padding: 50px;
+  color: #fff;
+}
+.header .header-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.header .header-text p {
+  font-size: 18px;
+}
+.header .header-action {
+  margin-top: 20px;
+}
+.header .header-action p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.header .header-action .button {
+  background-color: #fff;
+  color: #006daf;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.header .header-action .button:hover {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-text {
+  max-width: 600px;
+  text-align: left;
+  padding-right: 20px;
+}
+.content .content-text h2 {
+  font-size: 28px;
+}
+.content .content-text h2 span {
+  color: #006daf;
+}
+.content .content-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.content .content-text p a {
+  color: #006daf;
+  text-decoration: none;
+}
+.content .content-text p a:hover {
+  text-decoration: underline;
+}
+.content .content-text strong {
+  font-weight: bold;
+}
+.content .content-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

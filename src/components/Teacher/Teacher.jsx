@@ -4,140 +4,41 @@ const Teacher = () => {
   return (
     <>
       <div className="container-fluid py-5">
-        <div className="container pt-5 pb-3">
-          <div className="text-center mb-5">
-            <h5
-              className="text-primary text-uppercase mb-3"
-              style={{ letterSpacing: "5px" }}
-            >
-              Teachers
-            </h5>
-            <h1>Meet Our Teachers</h1>
-          </div>
-          <div className="row">
-            <div className="col-md-6 col-lg-3 text-center team mb-4">
-              <div className="team-item rounded overflow-hidden mb-2">
-                <div className="team-img position-relative">
-                  <img className="img-fluid" src="img/team-2.jpg" alt="" />
-                  <div className="team-social">
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="bg-secondary p-4">
-                  <h5>Jhon Doe</h5>
-                  <p className="m-0">Web Designer</p>
-                </div>
-              </div>
+        <div className="container py-5">
+          <div className="row align-items-center">
+            <div className="col-lg-5">
+              <img
+                className="img-fluid rounded mb-4 mb-lg-0"
+                src="img/team-2.jpg"
+                alt=""
+              />
             </div>
-            <div className="col-md-6 col-lg-3 text-center team mb-4">
-              <div className="team-item rounded overflow-hidden mb-2">
-                <div className="team-img position-relative">
-                  <img className="img-fluid" src="img/team-2.jpg" alt="" />
-                  <div className="team-social">
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="bg-secondary p-4">
-                  <h5>Jhon Doe</h5>
-                  <p className="m-0">Web Designer</p>
-                </div>
+            <div className="col-lg-7">
+              <div className="text-left mb-4">
+                <h1>
+                  <span style={{ color: "#006DAF" }}>Online Quran</span>{" "}
+                  Teachers
+                </h1>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 text-center team mb-4">
-              <div className="team-item rounded overflow-hidden mb-2">
-                <div className="team-img position-relative">
-                  <img className="img-fluid" src="img/team-4.jpg" alt="" />
-                  <div className="team-social">
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="bg-secondary p-4">
-                  <h5>Jhon Doe</h5>
-                  <p className="m-0">Web Designer</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 text-center team mb-4">
-              <div className="team-item rounded overflow-hidden mb-2">
-                <div className="team-img position-relative">
-                  <img className="img-fluid" src="img/team-4.jpg" alt="" />
-                  <div className="team-social">
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a
-                      className="btn btn-outline-light btn-square mx-1"
-                      href="/"
-                    >
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="bg-secondary p-4">
-                  <h5>Jhon Doe</h5>
-                  <p className="m-0">Web Designer</p>
-                </div>
-              </div>
+              <p>
+                Are you eager to delve into the depths of Quranic knowledge and
+                spiritual enlightenment worldwide? Discover a transformative
+                journey with our esteemed Online Quran Teachers accessible
+                across the globe. Whether you're embarking on a quest to Learn
+                Quran Online for the first time or seeking to deepen your
+                understanding, our platform offers unparalleled flexibility and
+                tailored learning experiences. We understand the diverse demands
+                of modern life and accommodate your schedule with customizable
+                class timings. Join us to align your Quranic studies seamlessly
+                with your lifestyle, wherever you are in the world.
+              </p>
+
+              <a
+                href="/contact"
+                className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2"
+              >
+                Learn More
+              </a>
             </div>
           </div>
         </div>

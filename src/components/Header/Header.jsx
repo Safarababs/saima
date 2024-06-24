@@ -129,10 +129,10 @@ const Header = () => {
                       <a href="/teachers" className="dropdown-item">
                         Our Teachers
                       </a>
-                      <a href="/teachers" className="dropdown-item">
+                      <a href="/maleteacher" className="dropdown-item">
                         Male Teachers
                       </a>
-                      <a href="/teachers" className="dropdown-item">
+                      <a href="/femaleteacher" className="dropdown-item">
                         Female Teachers
                       </a>
                     </div>
