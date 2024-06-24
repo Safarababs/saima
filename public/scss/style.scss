@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap");
+
 /******* Bootstrap Theming ********/
 
 $primary: #006daf;
@@ -239,6 +241,198 @@ h6,
 
 .testimonial-carousel .owl-dot.active {
   background: $dark;
+}
+
+// home
+.header .hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.header .hero h2 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  animation: slideInLeft 1s forwards, moveRightLeft 3s infinite alternate 1s;
+}
+
+.header .hero h2 span {
+  color: #fff;
+  animation: slideInRight 1s forwards;
+}
+
+.header .hero p {
+  margin: 10px 0 20px 0;
+  font-size: 22px;
+  color: #ffffff;
+  animation: slideInUp 1s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveRightLeft {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .header .hero {
+    padding-top: 45px;
+  }
+
+  .header .hero h2 {
+    font-size: 50px;
+  }
+
+  .header .hero p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .hero {
+    padding-top: 45px;
+  }
+
+  .header .hero h2 {
+    font-size: 45px;
+  }
+
+  .header .hero p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .hero {
+    padding-top: 45px;
+  }
+
+  .header .hero h2 {
+    font-size: 32px;
+  }
+
+  .header .hero p {
+    font-size: 15px;
+  }
+}
+
+.header .hero a.btn {
+  position: relative;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #00539c;
+  transition: 0.3s;
+}
+
+.header .hero a.btn:hover {
+  color: #006daf;
+  background: white;
+}
+
+.header .hero .form {
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  animation: slideInLeft 3s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.header .hero .form h3 {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.header .hero .form input,
+.header .hero .form select,
+.header .hero .form textarea {
+  margin-bottom: 15px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.header .hero .form textarea {
+  height: 75px;
+}
+
+.header .hero .form select,
+.header .hero .form input::placeholder,
+.header .hero .form textarea::placeholder {
+  color: #ffffff;
+}
+
+.header .hero .form select option:not(:checked) {
+  color: #666666;
+}
+
+.header .hero .form .btn {
+  position: relative;
+  padding: 10px 35px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background: #00539c;
+  transition: 0.3s;
+}
+
+.header .hero .form .btn:hover {
+  color: #00539c;
+  background: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .header .hero .form {
+    margin-top: 45px;
+  }
 }
 
 // pricing section

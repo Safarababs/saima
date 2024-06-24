@@ -1,114 +1,71 @@
 import React from "react";
 
-const Home = () => {
+const Header = () => {
+  function handleClick(event) {
+    event.preventDefault();
+  }
+
   return (
-    <>
-      <div className="container-fluid p-0 pb-5 mb-5">
-        <div
-          id="header-carousel"
-          className="carousel slide carousel-fade"
-          data-ride="carousel"
-          data-interval="2000"
-        >
-          <ol className="carousel-indicators">
-            <li
-              data-target="#header-carousel"
-              data-slide-to="0"
-              className="active"
-            ></li>
-            <li data-target="#header-carousel" data-slide-to="1"></li>
-            <li data-target="#header-carousel" data-slide-to="2"></li>
-          </ol>
-          <div className="carousel-inner">
-            <div
-              className="carousel-item active"
-              style={{ minHeight: "300px" }}
-            >
-              <img
-                className="position-relative w-100"
-                src="img/carousel-3.jpg"
-                style={{ minHeight: "300px", objectFit: "cover" }}
-                alt="Contact developer"
-              />
-              <div className="carousel-caption d-flex align-items-center justify-content-center">
-                <div
-                  className="p-5"
-                  style={{ width: "100%", maxWidth: "900px" }}
-                >
-                  <h5 className="text-white text-uppercase mb-md-3">
-                    Best Quran Education From Your Home by
-                  </h5>
-                  <h1 className="display-3 text-white mb-md-4">
-                    Al Mehdi Online Quran Academy
-                  </h1>
-                  <a
-                    href="/"
-                    className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2"
-                  >
-                    Learn More
-                  </a>
+    <div className="header home">
+      <div className="container-fluid">
+        <div className="hero row align-items-center">
+          <div className="col-md-7">
+            <p>Welcome To</p>
+            <h2>
+              <span>Al Mehdi Online Quran Academy</span>
+            </h2>
+
+            <p>We are offering online Quran learning at your door step</p>
+            <a className="btn" href="/contact">
+              {" "}
+              Register Now!
+            </a>
+          </div>
+          <div className="col-md-5">
+            <div className="form">
+              <h3>Get Register Now!</h3>
+              <form onSubmit={handleClick}>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+                <input
+                  className="form-control"
+                  type="text"
+                  name="phone"
+                  placeholder="Phone Number"
+                />
+                <div className="control-group">
+                  <select defaultValue="" name="service">
+                    <option value="" disabled hidden>
+                      Select Course
+                    </option>
+                    <option value="1">Noorani Qaida</option>
+                    <option value="2">Quran Memorisation</option>
+                    <option value="3">Quran Tafseer</option>
+                    <option value="4">Quran Mafaheem</option>
+                    <option value="5">Nehjul Balagha</option>
+                    <option value="6">Quran Tajweed</option>
+                    <option value="7">Fiqh</option>
+                    <option value="8">Sahifa Kamila</option>
+                    <option value="9">Seerat-e-Masomeen</option>
+                  </select>
                 </div>
-              </div>
-            </div>
-            <div className="carousel-item" style={{ minHeight: "300px" }}>
-              <img
-                className="position-relative w-100"
-                src="img/carousel-2.jpg"
-                style={{ minHeight: "300px", objectFit: "cover" }}
-                alt="Contact developer"
-              />
-              <div className="carousel-caption d-flex align-items-center justify-content-center">
-                <div
-                  className="p-5"
-                  style={{ width: "100%", maxWidth: "900px" }}
-                >
-                  <h5 className="text-white text-uppercase mb-md-3">
-                    Provideing Opputinity to
-                  </h5>
-                  <h1 className="display-3 text-white mb-md-4">
-                    Learn Quran at Online Learning Platform
-                  </h1>
-                  <a
-                    href="/"
-                    className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2"
-                  >
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item" style={{ minHeight: "300px" }}>
-              <img
-                className="position-relative w-100"
-                src="img/carousel-1.jpg"
-                style={{ minHeight: "300px", objectFit: "cover" }}
-                alt="Contact developer"
-              />
-              <div className="carousel-caption d-flex align-items-center justify-content-center">
-                <div
-                  className="p-5"
-                  style={{ width: "100%", maxWidth: "900px" }}
-                >
-                  <h5 className="text-white text-uppercase mb-md-3">
-                    For Your Kids
-                  </h5>
-                  <h1 className="display-3 text-white mb-md-4">
-                    New Way To Learn Quran From Home
-                  </h1>
-                  <a
-                    href="/"
-                    className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2"
-                  >
-                    Learn More
-                  </a>
-                </div>
-              </div>
+                <textarea
+                  className="form-control"
+                  placeholder="Your Message"
+                  name="message"
+                ></textarea>
+                <button className="btn btn-block">Start Free Trial</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Home;
+export default Header;
