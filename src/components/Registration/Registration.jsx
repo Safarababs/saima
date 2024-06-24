@@ -19,7 +19,7 @@ const Registration = () => {
                 </h5>
                 <h1 className="text-white">30% Off For New Students</h1>
               </div>
-              <p className="text-white">
+              <p className="text-white" style={{ textAlign: "left" }}>
                 Join Al Mehdi Online Quran Academy today and embark on a
                 transformative journey with our exclusive 30% discount for new
                 students. At our academy, rooted in the esteemed traditions of
@@ -29,7 +29,10 @@ const Registration = () => {
                 way of welcoming you into our community and empowering you with
                 the knowledge and understanding of the Holy Quran.
               </p>
-              <ul className="list-inline text-white m-0">
+              <ul
+                className="list-inline text-white m-0"
+                style={{ textAlign: "left" }}
+              >
                 <li className="py-2">
                   <i className="fa fa-check text-primary mr-3"></i>Enroll now
                   and enjoy a significant discount on all Quranic courses.
@@ -72,7 +75,6 @@ const Registration = () => {
                         className="custom-select border-0 px-4"
                         style={{ height: "47px" }}
                       >
-                        <option selected>Select a course</option>
                         <option value="1">Course 1</option>
                         <option value="2">Course 1</option>
                         <option value="3">Course 1</option>

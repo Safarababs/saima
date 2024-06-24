@@ -1,4 +1,8 @@
 import React from "react";
+import Unigue from "./Unigue";
+import Banner from "../Pages/Teacher page/BannerOne";
+import Vision from "./Vision";
+import Mission from "./Mission";
 
 const About = () => {
   return (
@@ -21,15 +25,15 @@ const About = () => {
                 >
                   About Us
                 </h5>
-                <h1>Innovative Way To Learn</h1>
+                <h1>Welcome to Al Mehdi Online Quran Academy</h1>
               </div>
               <p>
-                Welcome to Al Mehdi Online Quran Academy, a distinguished Shia
-                institution dedicated to providing comprehensive Quranic
-                education in a nurturing online environment. Rooted in the
-                teachings of Ahl al-Bayt (peace be upon them), our academy
-                strives to uphold the rich traditions and values of Shia Islam
-                while fostering a deep connection with the Holy Quran.
+                A distinguished Shia institution dedicated to providing
+                comprehensive Quranic education in a nurturing online
+                environment. Rooted in the teachings of Ahl al-Bayt (peace be
+                upon them), our academy strives to uphold the rich traditions
+                and values of Shia Islam while fostering a deep connection with
+                the Holy Quran.
               </p>
               <p>
                 our mission is to empower students worldwide with the knowledge
@@ -48,6 +52,11 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Unigue />
+      <Vision />
+
+      <Mission />
+      <Banner />
     </>
   );
 };

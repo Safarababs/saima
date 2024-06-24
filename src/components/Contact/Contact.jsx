@@ -30,7 +30,7 @@ const Contact = () => {
                 <form
                   name="sentMessage"
                   id="contactForm"
-                  novalidate="novalidate"
+                  noValidate="novalidate"
                 >
                   <div className="control-group">
                     <input
