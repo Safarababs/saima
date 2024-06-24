@@ -13,8 +13,17 @@ const Contact = () => {
               Contact
             </h5>
             <h1>Contact For Any Query</h1>
+            <p>
+              The world’s best online platform for E-services. Our students love
+              us because we behave friendly, professional, and cooperative for
+              the delivery of Learn Quran Online services. Therefore we’d love
+              to help you for exceeding your goals for learning. Have faced a
+              problem that needs a solution? Feel free to contact us and we’ll
+              work with you to find the solutions for which you’ve been looking.
+            </p>
           </div>
           <div className="row justify-content-center">
+            {/*  */}
             <div className="col-lg-8">
               <div className="contact-form bg-secondary rounded p-5">
                 <div id="success"></div>

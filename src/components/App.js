@@ -7,6 +7,7 @@ import AboutPage from "./Pages/About Page/About";
 import TeacherPage from "./Pages/Teacher page/TeacherPage";
 import CoursesPage from "./Pages/Courses";
 import ContactPage from "./Pages/Contact Page/ContactPage";
+import PricingCard from "./Pricing Plan/Pricing";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/course" element={<CoursesPage />} />
             <Route path="/contact" element={<ContactPage />}></Route>
             <Route path="/teachers" element={<TeacherPage />}></Route>
+            <Route path="/pricing" element={<PricingCard />}></Route>
           </Routes>
           <Footer />
         </div>

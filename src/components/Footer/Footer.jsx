@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-6 mb-5">
                 <h5
-                  className="text-primary text-uppercase mb-4"
+                  className=" text-uppercase mb-4 text-white"
                   style={{ letterSpacing: "5px" }}
                 >
                   Get In Touch
@@ -26,38 +26,38 @@ const Footer = () => {
                 </p>
                 <div className="d-flex justify-content-start mt-4">
                   <a className="btn btn-outline-light btn-square mr-2" href="/">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a className="btn btn-outline-light btn-square mr-2" href="/">
                     <i className="fab fa-facebook-f"></i>
                   </a>
                   <a className="btn btn-outline-light btn-square mr-2" href="/">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                   <a className="btn btn-outline-light btn-square" href="/">
-                    <i className="fab fa-instagram"></i>
+                    <i className="fab fa-youtube"></i>
                   </a>
                 </div>
               </div>
               <div className="col-md-6 mb-5">
                 <h5
-                  className="text-primary text-uppercase mb-4"
+                  className="text-white text-uppercase mb-4"
                   style={{ letterSpacing: "5px" }}
                 >
                   Quick Links
                 </h5>
                 <div className="d-flex flex-column justify-content-start">
-                  <a className="text-white mb-2" href="/">
+                  <a className="text-white mb-2" href="/home">
                     <i className="fa fa-angle-right mr-2"></i> Home
                   </a>
-                  <a className="text-white mb-2" href="/">
+                  <a className="text-white mb-2" href="/about">
                     <i className="fa fa-angle-right mr-2"></i> About
                   </a>
-                  <a className="text-white mb-2" href="/">
+                  <a className="text-white mb-2" href="/courses">
                     <i className="fa fa-angle-right mr-2"></i> Courses
                   </a>
-                  <a className="text-white mb-2" href="/">
-                    <i className="fa fa-angle-right mr-2"></i> Teachers
+                  <a className="text-white mb-2" href="/pricing">
+                    <i className="fa fa-angle-right mr-2"></i> Fee Structure
+                  </a>
+                  <a className="text-white mb-2" href="/teachers">
+                    <i className="fa fa-angle-right mr-2"></i>Teachers
                   </a>
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-5 col-md-12 mb-5">
             <h5
-              className="text-primary text-uppercase mb-4"
+              className="text-white text-uppercase mb-4"
               style={{ letterSpacing: "5px" }}
             >
               Subscribe to Our Newsletter!
@@ -99,15 +99,20 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-6 text-center text-md-left mb-3 mb-md-0">
             <p className="m-0 text-white">
-              &copy; <a href="/">Al Mehdi Quran</a>. All Rights Reserved.
-              Designed by
-              <a href="https://safarababs.github.io/safarweb/"> SAFAR ABBAS </a>
+              &copy;{" "}
+              <a href="/" className="text-white" style={{ cursor: "pointer" }}>
+                Al Mehdi Quran All Rights Reserved @ {new Date().getFullYear()}
+              </a>
             </p>
           </div>
           <div className="col-lg-6 text-center text-md-right">
             <ul className="nav d-inline-flex">
               <li className="nav-item">
-                <a className="nav-link text-white py-0" href="/">
+                <a
+                  className="nav-link text-white py-0"
+                  href="/"
+                  style={{ cursor: "pointer" }}
+                >
                   Designed by Safar Abbas
                 </a>
               </li>

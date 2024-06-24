@@ -114,35 +114,38 @@ const Header = () => {
                   <a href="/course" className="nav-item nav-link">
                     Courses
                   </a>
-                  <a href="/teachers" className="nav-item nav-link">
-                    Teachers
+                  <a href="/pricing" className="nav-item nav-link">
+                    Fee Structure
                   </a>
-                  {/* <div className="nav-item dropdown">
+                  <div className="nav-item dropdown">
                     <a
-                      href="/"
+                      href="/teachers"
                       className="nav-link dropdown-toggle"
                       data-toggle="dropdown"
                     >
-                      Blog
+                      Teachers
                     </a>
                     <div className="dropdown-menu rounded-0 m-0">
-                      <a href="blog.html" className="dropdown-item">
-                        Blog List
+                      <a href="/teachers" className="dropdown-item">
+                        Our Teachers
                       </a>
-                      <a href="single.html" className="dropdown-item">
-                        Blog Detail
+                      <a href="/teachers" className="dropdown-item">
+                        Male Teachers
+                      </a>
+                      <a href="/teachers" className="dropdown-item">
+                        Female Teachers
                       </a>
                     </div>
-                  </div> */}
+                  </div>
                   <a href="/contact" className="nav-item nav-link">
                     Contact
                   </a>
                 </div>
                 <a
                   className="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
-                  href="/"
+                  href="/contact"
                 >
-                  Register Now
+                  Free Trial
                 </a>
               </div>
             </nav>
