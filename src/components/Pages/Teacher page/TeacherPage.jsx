@@ -1,6 +1,5 @@
 import React from "react";
 import Teacher from "../../Teacher/Teacher";
-import Registration from "../../Registration/Registration";
 import Motivate from "./Motivate";
 import TeacherQualities from "./TeacherQualities";
 import Banner from "./BannerOne";

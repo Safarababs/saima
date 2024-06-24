@@ -37,7 +37,6 @@ const Courses = () => {
                         <i className="fa fa-star text-primary mr-2"></i>4.5
                         <small>(250)</small>
                       </h6>
-                      <h5 className="m-0">$99</h5>
                     </div>
                   </div>
                 </div>
@@ -65,7 +64,6 @@ const Courses = () => {
                         <i className="fa fa-star text-primary mr-2"></i>4.5
                         <small>(250)</small>
                       </h6>
-                      <h5 className="m-0">$99</h5>
                     </div>
                   </div>
                 </div>
@@ -93,7 +91,6 @@ const Courses = () => {
                         <i className="fa fa-star text-primary mr-2"></i>4.5
                         <small>(250)</small>
                       </h6>
-                      <h5 className="m-0">$99</h5>
                     </div>
                   </div>
                 </div>
@@ -121,7 +118,6 @@ const Courses = () => {
                         <i className="fa fa-star text-primary mr-2"></i>4.5
                         <small>(250)</small>
                       </h6>
-                      <h5 className="m-0">$99</h5>
                     </div>
                   </div>
                 </div>
@@ -149,7 +145,6 @@ const Courses = () => {
                         <i className="fa fa-star text-primary mr-2"></i>4.5
                         <small>(250)</small>
                       </h6>
-                      <h5 className="m-0">$99</h5>
                     </div>
                   </div>
                 </div>
@@ -177,7 +172,6 @@ const Courses = () => {
                         <i className="fa fa-star text-primary mr-2"></i>4.5
                         <small>(250)</small>
                       </h6>
-                      <h5 className="m-0">$99</h5>
                     </div>
                   </div>
                 </div>
