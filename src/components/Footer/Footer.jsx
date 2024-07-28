@@ -36,6 +36,20 @@ const Footer = () => {
                         qualified and experienced teachers. This interactive
                         approach allows us to deliver personalized instruction
                         that is both effective and inspiring.
+                        <a
+                          href="/terms"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            background: "white",
+                            borderRadius: "10px",
+                            padding: ".2rem",
+                            color: "blue",
+                          }}
+                        >
+                          {" "}
+                          Terms of Service
+                        </a>
                       </p>
                       <div className="footer-btn d-flex">
                         <a
