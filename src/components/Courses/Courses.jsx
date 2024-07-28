@@ -41,10 +41,10 @@ const Courses = () => {
                 <img className="img-fluid" src="img/course-1.jpg" alt="" />
                 <div className="p-4">
                   <a className="h5" href="/" style={{ color: "Black" }}>
-                    Noorani Qaida
+                    Quranic Qaida
                   </a>
                   <p style={{ color: "black" }}>
-                    The Noorani Qaida course at Al Mehdi Online Quran Academy!
+                    The Quranic Qaida course at Al Mehdi Online Quran Academy!
                     This course is ideal for beginners who want to learn to read
                     the Holy Quran. You will master the basics of Arabic
                     letters, pronunciation, and Tajweed rules through

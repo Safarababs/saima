@@ -82,26 +82,17 @@ const Footer = () => {
                       <a href="/courses">
                         <i className="fas fa-angle-right me-2"></i> Courses
                       </a>
-                      <a href="/services">
-                        <i className="fas fa-angle-right me-2"></i> Services
-                      </a>
-                      <a href="/faq">
+
+                      <a href="/faqquestion">
                         <i className="fas fa-angle-right me-2"></i> FAQ
                       </a>
-                      <a href="/blog">
-                        <i className="fas fa-angle-right me-2"></i> Blog
-                      </a>
+
                       <a href="/contact">
                         <i className="fas fa-angle-right me-2"></i> Contact Us
                       </a>
-                      <a href="/testimonials">
-                        <i className="fas fa-angle-right me-2"></i> Testimonials
-                      </a>
+
                       <a href="/register">
                         <i className="fas fa-angle-right me-2"></i> Register
-                      </a>
-                      <a href="/login">
-                        <i className="fas fa-angle-right me-2"></i> Login
                       </a>
                     </div>
                   </div>

@@ -38,7 +38,7 @@ const CoursesPage = () => {
           <ul>
             <li>
               <i className="fas fa-star"></i>
-              <a href="noraniQaida">Basic Noorani Qaida Course</a>
+              <a href="noraniQaida">Basic Quranic Qaida Course</a>
             </li>
             <li>
               <i className="fas fa-star"></i>
