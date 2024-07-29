@@ -29,15 +29,30 @@ const Header = () => {
             <div className="col-lg-4 text-center text-lg-end">
               <div className="d-flex justify-content-end">
                 <div className="d-flex border-end border-primary pe-3">
-                  <a className="btn p-0 text-primary me-3" href="/">
+                  <a
+                    className="btn-square p-0 text-primary me-3"
+                    href="https://www.facebook.com/profile.php?id=100091821242239"
+                  >
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a className="btn p-0 text-primary me-3" href="/">
-                    <i className="fab fa-youtube"></i>
+                  <a
+                    className="btn-square p-0 text-primary me-3"
+                    href="https://twitter.com/almehdiquran"
+                  >
+                    <i className="fab fa-twitter"></i>
                   </a>
 
-                  <a className="btn p-0 text-primary me-0" href="/">
+                  <a
+                    className="btn-square p-0 text-primary me-0"
+                    href="https://www.linkedin.com/company/almehdiquran"
+                  >
                     <i className="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    className="btn-square p-0 text-primary me-0"
+                    href="https://www.instagram.com/almehdiquran"
+                  >
+                    <i className="fab fa-instagram"></i>
                   </a>
                 </div>
               </div>
@@ -46,9 +61,9 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+      <div className="container-fluid header-2 nav-bar px-0 px-lg-4 py-lg-0">
         <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-light">
+          <nav className="nav navbar navbar-expand-lg navbar-light">
             <Link to="/" className="navbar-brand p-0">
               <img src="img/logo.png" alt="Logo" />
             </Link>
@@ -82,7 +97,7 @@ const Header = () => {
                   >
                     <li>
                       <Link to="/noraniQaida" className="dropdown-item">
-                        Basic Noorani Qaida Course
+                        Basic Quranic Qaida Course
                       </Link>
                     </li>
                     <li>
@@ -153,15 +168,15 @@ const Header = () => {
                 <Link to="/faqquestion" className="nav-item nav-link">
                   Faq's
                 </Link>
-                {/* <Link to="/contact" className="nav-item nav-link">
+                <Link to="/books" className="nav-item nav-link">
                   More
-                </Link> */}
+                </Link>
               </div>
             </div>
             <div className="d-none d-xl-flex flex-shrink-0 ps-4">
               <a
                 href="tel:+923451147272"
-                className="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                className=" btn-light btn-lg-square rounded-circle position-relative wow tada"
                 data-wow-delay=".9s"
               >
                 <i className="fa fa-phone-alt fa-2x"></i>

@@ -34,14 +34,14 @@ const Home = () => {
                     </p>
                     <div className="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
                       <a
-                        className="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2"
-                        href="/"
+                        className=" btn-light rounded-pill py-3 px-4 px-md-5 me-2"
+                        href="/register"
                       >
                         Register Now
                       </a>
                       <a
-                        className="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
-                        href="/"
+                        className=" btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
+                        href="/contact"
                       >
                         Start Free Trial
                       </a>

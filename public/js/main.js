@@ -1,5 +1,5 @@
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 
 (function ($) {
   "use strict";
@@ -95,3 +95,40 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
     return false;
   });
 })(jQuery);
+
+$(document).ready(function () {
+  $(".accordion").click(function () {
+    $(this).toggleClass("active");
+  });
+
+  $("#menu").click(function () {
+    $(this).toggleClass("fa-times");
+    $(".navbar").toggleClass("nav-toggle");
+  });
+
+  $("#share").click(function () {
+    $(this).toggleClass("share-active");
+  });
+
+  $(window).on("load scroll", function () {
+    $(".fa-bars").removeClass("fa-times");
+    $(".navbar").removeClass("nav-toggle");
+    $("#share").removeClass("share-active");
+  });
+
+  $(".controls li").click(function () {
+    let filter = $(this).attr("data-filter");
+    if (filter == "all") {
+      $(".books .box").show(400);
+    } else {
+      $(".books .box")
+        .not("." + filter)
+        .hide(200);
+      $(".books .box")
+        .filter("." + filter)
+        .show(400);
+    }
+
+    $(this).addClass("button-active");
+  });
+});

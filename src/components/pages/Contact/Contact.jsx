@@ -1,6 +1,38 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 const ContactUs = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Fetch form values
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+
+    const serviceID = "service_2o5rq45";
+    const templateID = "template_o1kx4h4";
+    const userId = "V8T-BnQcnCg_dNTxt";
+
+    // Send email using EmailJS
+    emailjs
+      .send(serviceID, templateID, formData, userId)
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        alert("Your message has been sent successfully!");
+        // Optionally clear the form fields
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        alert("Failed to send email. Please try again later.");
+      });
+  };
+
   return (
     <>
       <div className="bg-breadcrumb">
@@ -18,7 +50,7 @@ const ContactUs = () => {
         <h1>Contact Us</h1>
         <div className="contact-info">
           <p>
-            <i className="fas fa-phone"></i>Pk +92 345 1147272
+            <i className="fas fa-phone"></i> Pk +92 345 1147272
           </p>
         </div>
 
@@ -27,7 +59,7 @@ const ContactUs = () => {
           complaints by filling out the form below.
         </p>
 
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <label htmlFor="name">Your Name *</label>
           <input type="text" id="name" name="name" required />
 

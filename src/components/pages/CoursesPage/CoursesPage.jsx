@@ -1,5 +1,5 @@
 import React from "react";
-import Faq from "../../Faq/Faq";
+import Courses from "../../Courses/Courses";
 
 const CoursesPage = () => {
   return (
@@ -68,10 +68,12 @@ const CoursesPage = () => {
             Quran from professional and qualified Quran tutors.
           </p>
           <p>Build up a life long relationship with Quran.</p>
-          <button>Book a Free Trial</button>
+          <a href="/contact" className="btn">
+            Start Free Trial
+          </a>
         </div>
       </section>
-      <Faq />
+      <Courses />
     </>
   );
 };

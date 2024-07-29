@@ -5,19 +5,19 @@ const Courses = () => {
     <>
       <div
         className="container-fluid py-5"
-        style={{ backgroundColor: "#006daf", color: "white" }}
+        style={{ backgroundColor: "white", color: "black" }}
       >
         <div className="container py-5">
           <div className="text-center mb-5">
             <h5
               className="text-uppercase mb-3"
-              style={{ letterSpacing: "5px", color: "white" }}
+              style={{ letterSpacing: "5px", color: "black" }}
             >
               Courses
             </h5>
-            <h1 style={{ letterSpacing: "5px", color: "white" }}>
+            <h2 style={{ letterSpacing: "5px", color: "black" }}>
               Our Popular Courses
-            </h1>
+            </h2>
             <p className="mb-0">
               Explore our popular courses, designed to cater to diverse
               interests and skill levels. From foundational courses to advanced
@@ -40,28 +40,25 @@ const Courses = () => {
               >
                 <img className="img-fluid" src="img/course-1.jpg" alt="" />
                 <div className="p-4">
-                  <a className="h5" href="/" style={{ color: "Black" }}>
+                  <a
+                    className="h5"
+                    href="/noraniQaida"
+                    style={{ color: "Black" }}
+                  >
                     Quranic Qaida
                   </a>
                   <p style={{ color: "black" }}>
-                    The Quranic Qaida course at Al Mehdi Online Quran Academy!
-                    This course is ideal for beginners who want to learn to read
-                    the Holy Quran. You will master the basics of Arabic
-                    letters, pronunciation, and Tajweed rules through
-                    interactive lessons and regular practice sessions. Our
-                    experienced instructors will guide you in recognizing and
-                    pronouncing the Arabic alphabet, forming words, and reading
-                    simple sentences. By the end, you'll have a strong
-                    foundation for reading the Holy Quran correctly. Join us to
-                    start your Quranic education journey!
+                    The Quranic Qaida Course is a fundamental course designed to
+                    help students master the basics of Quranic reading. Our
+                    expert tutors.....
                   </p>
-                  <div className="border-top mt-4 pt-4">
-                    <div className="d-flex justify-content-between">
-                      <small className="m-0" style={{ color: "black" }}>
-                        <i className="far fa-clock mr-2"></i>01:00h
-                      </small>
-                    </div>
-                  </div>
+                  <a
+                    href="/noraniQaida"
+                    className="btn"
+                    style={{ width: "100%" }}
+                  >
+                    Read more
+                  </a>
                 </div>
               </div>
             </div>
@@ -75,32 +72,17 @@ const Courses = () => {
               >
                 <img className="img-fluid" src="img/course-2.jpg" alt="" />
                 <div className="p-4">
-                  <a className="h5" href="/" style={{ color: "Black" }}>
+                  <a className="h5" href="/tajweed" style={{ color: "Black" }}>
                     Tajweed al Quran
                   </a>
                   <p style={{ color: "black" }}>
-                    The Tajweed Al Quran course at Al Mehdi Online Quran
-                    Academy! This course is for those who want to improve their
-                    Quranic recitation. You will learn essential Tajweed rules
-                    to ensure proper pronunciation and articulation of each
-                    letter and word. Our experienced instructors will guide you
-                    through interactive lessons and practice sessions, helping
-                    you master the correct recitation techniques. By the end,
-                    you'll be able to recite the Holy Quran beautifully and
-                    accurately. Join us to perfect your Quranic recitation
-                    skills!
+                    The Tajweed Rules Course is an essential program designed to
+                    enhance your Quranic recitation by focusing on the precise
+                    application....
                   </p>
-                  <div className="border-top mt-4 pt-4">
-                    <div className="d-flex justify-content-between">
-                      <small className="m-0" style={{ color: "black" }}>
-                        <i
-                          className="far fa-clock  mr-2"
-                          style={{ color: "black" }}
-                        ></i>
-                        01:00h
-                      </small>
-                    </div>
-                  </div>
+                  <a href="/tajweed" className="btn" style={{ width: "100%" }}>
+                    Read more
+                  </a>
                 </div>
               </div>
             </div>
@@ -114,32 +96,25 @@ const Courses = () => {
               >
                 <img className="img-fluid" src="img/course-3.jpg" alt="" />
                 <div className="p-4">
-                  <a className="h5" href="/" style={{ color: "Black" }}>
+                  <a
+                    className="h5"
+                    href="/Translation"
+                    style={{ color: "Black" }}
+                  >
                     Quran Translation
                   </a>
                   <p style={{ color: "black" }}>
-                    The Quran Translation course at Al Mehdi Online Quran
-                    Academy! This course is for those who want to understand the
-                    meaning of the Holy Quran. You will learn to translate
-                    Quranic verses into easy-to-understand language, gaining
-                    deeper insights into its teachings. Our experienced
-                    instructors will guide you through interactive lessons,
-                    helping you comprehend the context and significance of each
-                    verse. By the end, you'll have a clearer understanding of
-                    the Quran’s messages. Join us to deepen your connection with
-                    the Holy Quran!
+                    Our Quran Translation Course is designed to provide a deep
+                    understanding of the meanings and interpretations of the
+                    Holy Quran....
                   </p>
-                  <div className="border-top mt-4 pt-4">
-                    <div className="d-flex justify-content-between">
-                      <small className="m-0" style={{ color: "black" }}>
-                        <i
-                          className="far fa-clock  mr-2"
-                          style={{ color: "black" }}
-                        ></i>
-                        01:00h
-                      </small>
-                    </div>
-                  </div>
+                  <a
+                    href="/Translation"
+                    className="btn"
+                    style={{ width: "100%" }}
+                  >
+                    Read more
+                  </a>
                 </div>
               </div>
             </div>
@@ -153,32 +128,17 @@ const Courses = () => {
               >
                 <img className="img-fluid" src="img/course-4.jpg" alt="" />
                 <div className="p-4">
-                  <a className="h5" href="/" style={{ color: "Black" }}>
+                  <a className="h5" href="/tafseer" style={{ color: "Black" }}>
                     Quran Tafseer
                   </a>
                   <p style={{ color: "black" }}>
-                    The Quran Tafseer course at Al Mehdi Online Quran Academy!
-                    This course is for those who want to explore the deeper
-                    meanings of the Holy Quran. You will study detailed
-                    explanations and interpretations of Quranic verses,
-                    understanding their context and significance. Our
-                    experienced instructors will guide you through interactive
-                    lessons, providing insights into the historical and
-                    spiritual aspects of the Quran. By the end, you'll have a
-                    profound understanding of the Quran’s teachings. Join us to
-                    enrich your knowledge of the Holy Quran!
+                    Our Quran Tafseer Course offers an in-depth exploration of
+                    the meanings and interpretations of the Quranic text. This
+                    course is...
                   </p>
-                  <div className="border-top mt-4 pt-4">
-                    <div className="d-flex justify-content-between">
-                      <small className="m-0" style={{ color: "black" }}>
-                        <i
-                          className="far fa-clock  mr-2"
-                          style={{ color: "black" }}
-                        ></i>
-                        01:00h
-                      </small>
-                    </div>
-                  </div>
+                  <a href="/tafseer" className="btn" style={{ width: "100%" }}>
+                    Read more
+                  </a>
                 </div>
               </div>
             </div>
@@ -192,31 +152,17 @@ const Courses = () => {
               >
                 <img className="img-fluid" src="img/course-5.jpg" alt="" />
                 <div className="p-4">
-                  <a className="h5" href="/" style={{ color: "Black" }}>
+                  <a className="h5" href="/hifz" style={{ color: "Black" }}>
                     Quran Memorisation
                   </a>
                   <p style={{ color: "black" }}>
-                    The Quran Memorisation course at Al Mehdi Online Quran
-                    Academy! This course is for those who aspire to memorize the
-                    Holy Quran. You will learn effective memorization techniques
-                    and follow a structured plan to help you retain Quranic
-                    verses. Our experienced instructors will provide guidance
-                    and support through interactive lessons and regular revision
-                    sessions. By the end, you'll have successfully memorized
-                    significant portions of the Quran. Join us to achieve your
-                    goal of becoming a Hafiz of the Holy Quran!
+                    Our Quran Memorisation Course is designed to help students
+                    of all ages achieve the goal of memorizing the entire
+                    Quran....
                   </p>
-                  <div className="border-top mt-4 pt-4">
-                    <div className="d-flex justify-content-between">
-                      <small className="m-0" style={{ color: "black" }}>
-                        <i
-                          className="far fa-clock  mr-2"
-                          style={{ color: "black" }}
-                        ></i>
-                        01:00h
-                      </small>
-                    </div>
-                  </div>
+                  <a href="/hifz" className="btn" style={{ width: "100%" }}>
+                    Read more
+                  </a>
                 </div>
               </div>
             </div>
@@ -230,32 +176,25 @@ const Courses = () => {
               >
                 <img className="img-fluid" src="img/course-6.jpg" alt="" />
                 <div className="p-4">
-                  <a className="h5" href="/" style={{ color: "Black" }}>
+                  <a
+                    className="h5"
+                    href="/islamicstudy"
+                    style={{ color: "Black" }}
+                  >
                     Shia Islamic Studies
                   </a>
                   <p style={{ color: "black" }}>
-                    The Shia Islamic Studies course at Al Mehdi Online Quran
-                    Academy! This course is for those who want to deepen their
-                    understanding of Shia Islam. You will study key aspects of
-                    Shia theology, history, and practices through interactive
-                    lessons. Our experienced instructors will guide you in
-                    exploring the beliefs and traditions unique to Shia Islam,
-                    helping you gain a comprehensive understanding of its
-                    teachings. By the end, you'll have a solid foundation in
-                    Shia Islamic studies. Join us to enrich your knowledge and
-                    faith!
+                    Our Islamic Studies for Kids Course is designed to provide
+                    young learners with a solid foundation in Islamic principles
+                    and values....
                   </p>
-                  <div className="border-top mt-4 pt-4">
-                    <div className="d-flex justify-content-between">
-                      <small className="m-0" style={{ color: "black" }}>
-                        <i
-                          className="far fa-clock  mr-2"
-                          style={{ color: "black" }}
-                        ></i>
-                        01:00h
-                      </small>
-                    </div>
-                  </div>
+                  <a
+                    href="/islamicstudy"
+                    className="btn"
+                    style={{ width: "100%" }}
+                  >
+                    Read more
+                  </a>
                 </div>
               </div>
             </div>

@@ -53,7 +53,7 @@ const Footer = () => {
                       </p>
                       <div className="footer-btn d-flex">
                         <a
-                          className="btn btn-md-square rounded-circle me-3"
+                          className=" btn-md-square rounded-circle me-3"
                           href="https://www.facebook.com/almehdiquran"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const Footer = () => {
                           <i className="fab fa-facebook-f"></i>
                         </a>
                         <a
-                          className="btn btn-md-square rounded-circle me-3"
+                          className=" btn-md-square rounded-circle me-3"
                           href="https://twitter.com/almehdiquran"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -69,7 +69,7 @@ const Footer = () => {
                           <i className="fab fa-twitter"></i>
                         </a>
                         <a
-                          className="btn btn-md-square rounded-circle me-3"
+                          className=" btn-md-square rounded-circle me-3"
                           href="https://www.instagram.com/almehdiquran"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -77,7 +77,7 @@ const Footer = () => {
                           <i className="fab fa-instagram"></i>
                         </a>
                         <a
-                          className="btn btn-md-square rounded-circle me-0"
+                          className=" btn-md-square rounded-circle me-0"
                           href="https://www.linkedin.com/company/almehdiquran"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -177,7 +177,7 @@ const Footer = () => {
         <div className="container">
           <div className="row g-4 align-items-center">
             <div className="col-md-6 text-center text-md-end mb-md-0">
-              <span class="text-white">
+              <span className="text-white">
                 <a href="/" className="border-bottom text-white">
                   <i className="fas fa-copyright text-white me-2"></i>Al Mehdi
                   Online Quran Academy

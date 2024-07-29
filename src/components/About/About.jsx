@@ -47,7 +47,10 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+            <div
+              className="col-xl-6 wow fadeInRight smallScreen"
+              data-wow-delay="0.2s"
+            >
               <div className="bg-white rounded p-5 h-100">
                 <div className="row g-4 justify-content-center">
                   <div className="col-12">

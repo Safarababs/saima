@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./Header/Header";
 import Landing from "./Landing/Landing";
 import Footer from "./Footer/Footer";
 import CoursesPage from "./pages/CoursesPage/CoursesPage";
-import NoraniQaidaCourse from "./pages/CoursesPage/NoraniQaidaCourse";
 import Tajweed from "./pages/CoursesPage/Tajweed";
 import QuranTranslation from "./pages/CoursesPage/translation";
 import QuranTafseer from "./pages/CoursesPage/QuranTafseer";
@@ -16,6 +14,8 @@ import RegistrationPage from "./pages/Register/Register";
 import TermsOfService from "./pages/Terms of Service/TermsOfService";
 import ContactUs from "./pages/Contact/Contact";
 import FAQQuestion from "./pages/Faq Question/FaqQuestion";
+import BookList from "./Books/BookList";
+import Header from "./Header/Header";
 
 const App = () => {
   return (
@@ -24,7 +24,6 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Landing />} />
         <Route path="/courses" element={<CoursesPage />} />
-        <Route path="/noraniQaida" element={<NoraniQaidaCourse />} />
         <Route path="/tajweed" element={<Tajweed />} />
         <Route path="/Translation" element={<QuranTranslation />} />
         <Route path="/tafseer" element={<QuranTafseer />} />
@@ -37,6 +36,7 @@ const App = () => {
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/faqquestion" element={<FAQQuestion />} />
+        <Route path="/books" element={<BookList />} />
       </Routes>
       <Footer />
     </Router>

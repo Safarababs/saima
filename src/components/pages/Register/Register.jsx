@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import Faq from "../../Faq/Faq";
 
 const RegistrationPage = () => {
   const [formData, setFormData] = useState({
-    studentName: "",
+    name: "",
     guardianName: "",
     gender: "",
     studentAge: "",
@@ -31,8 +32,61 @@ const RegistrationPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form Data Submitted:", formData);
+
+    // Prepare the email template parameters
+
+    const templateParams = {
+      name: formData.name,
+      guardianName: formData.guardianName,
+      gender: formData.gender,
+      studentAge: formData.studentAge,
+      spokenLanguage: formData.spokenLanguage,
+      email: formData.email,
+      phone: formData.phone,
+      whatsapp: formData.whatsapp,
+      skypeId: formData.skypeId,
+      country: formData.country,
+      city: formData.city,
+      course: formData.course,
+      classDays: formData.classDays,
+      classTime: formData.classTime,
+      tutorGender: formData.tutorGender,
+      message: formData.message,
+    };
+
+    // Replace with your EmailJS service ID and template ID
+    const serviceID = "service_2o5rq45";
+    const templateID = "template_o1kx4h4";
+    const userId = "V8T-BnQcnCg_dNTxt";
+
+    // Send email using EmailJS
+    emailjs
+      .send(serviceID, templateID, templateParams, userId)
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        // Optionally clear the form or show success message
+        setFormData({
+          name: "",
+          guardianName: "",
+          gender: "",
+          studentAge: "",
+          spokenLanguage: "",
+          email: "",
+          phone: "",
+          whatsapp: "",
+          skypeId: "",
+          country: "",
+          city: "",
+          course: "",
+          classDays: "",
+          classTime: "",
+          tutorGender: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
   };
 
   return (
@@ -58,12 +112,12 @@ const RegistrationPage = () => {
           <fieldset>
             <legend>Register Here for Free Trial Session</legend>
 
-            <label htmlFor="studentName">Student Name *</label>
+            <label htmlFor="name">Student Name *</label>
             <input
               type="text"
-              id="studentName"
-              name="studentName"
-              value={formData.studentName}
+              id="name"
+              name="name"
+              value={formData.name}
               onChange={handleChange}
               required
             />

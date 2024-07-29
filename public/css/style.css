@@ -25,6 +25,16 @@
 .btn {
   font-weight: 600;
   transition: 0.5s;
+  padding: 0.2rem;
+  color: white;
+  background-color: var(--bs-primary);
+
+  width: auto;
+}
+
+.btn:hover {
+  background-color: var(--bs-white);
+  color: var(--bs-primary);
 }
 
 .btn-square {
@@ -361,12 +371,12 @@
 /*** Feature Start ***/
 .feature .feature-item {
   border-radius: 10px;
-  background: var(--bs-white);
+  background: var(--bs-primary);
   transition: 0.5s;
 }
 
 .feature .feature-item:hover {
-  background: var(--bs-primary);
+  background: var(--bs-white);
 }
 
 .feature .feature-item .feature-icon {
@@ -412,17 +422,28 @@
   transition: 0.5s;
 }
 
+.feature .feature-item h4,
+.feature .feature-item p {
+  transition: 0.5s;
+  color: var(--bs-white);
+}
+
 .feature .feature-item:hover .feature-icon {
   color: var(--bs-white);
 }
 .feature .feature-item:hover h4,
 .feature .feature-item:hover p {
-  color: var(--bs-white);
+  color: var(--bs-primary);
+}
+
+.feature .feature-item a.btn {
+  background: var(--bs-white);
+  color: var(--bs-primary);
 }
 
 .feature .feature-item:hover a.btn {
-  background: var(--bs-white);
-  color: var(--bs-primary);
+  background: var(--bs-primary);
+  color: var(--bs-white);
 }
 
 .feature .feature-item:hover a.btn:hover {
@@ -498,7 +519,7 @@
 }
 
 .coursescontainer {
-  max-width: 800px; /* Max width for the container */
+  max-width: 1200px; /* Max width for the container */
   margin: 0 auto; /* Center-align container */
 }
 
@@ -531,32 +552,40 @@
   font-size: 1.25rem; /* Larger font size for icons */
 }
 
-.coursescontainer a {
-  color: #007bff; /* Primary color for links */
-  text-decoration: none; /* Remove underline from links */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+.btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.coursescontainer a:hover {
-  color: #0056b3; /* Darker shade for links on hover */
+btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .coursescontainer button {
-  background-color: #007bff; /* Primary color for button */
-  color: #ffffff; /* White color for button text */
-  border: none; /* Remove border */
-  padding: 0.75rem 2rem; /* Increased padding */
-  font-size: 1.125rem; /* Slightly larger font size */
-  cursor: pointer; /* Cursor pointer on hover */
-  margin-top: 1.5rem; /* Margin top */
-  border-radius: 0.5rem; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .coursescontainer button:hover {
-  background-color: #0056b3; /* Darker shade for button on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  background-color: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Hero Section */
@@ -685,14 +714,14 @@ ol li i {
 }
 
 /* Card Styles */
-/* General Card Styling */
+
 .card {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
-  width: auto;
+  width: 90%;
 }
 
 /* List Items Styling */
@@ -1965,6 +1994,64 @@ input[type="radio"]:checked + label {
   z-index: 9;
 }
 /*** Contact End ***/
+/* books corner start */
+.book-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* books corner end */
 
 /*** Footer Start ***/
 .footer {
@@ -2063,3 +2150,124 @@ input[type="radio"]:checked + label {
   border-top: 1px solid rgb(255, 255, 255);
 }
 /*** copyright end ***/
+
+/* header panga */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap");
+header .header-1 .form-container .marquee {
+  width: 100vw;
+  line-height: 30px;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+header .header-1 .form-container .marquee p {
+  display: inline-block;
+  font-size: 2.5rem;
+  animation: marquee 20s linear infinite;
+}
+@font-face {
+  font-family: "Attari_Quran Regular";
+  src: url("./fonts/Attari_Quran Regular.ttf") format("truetype");
+}
+@keyframes marquee {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+header .header-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(skyblue, blueviolet);
+  top: 0;
+  right: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+header .header-2 .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header .header-2 .navbar ul li {
+  margin: 1rem;
+}
+header .header-2 .navbar ul li a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+header .header-2 .navbar ul li a:hover,
+header .header-2 .navbar ul li a .active {
+  color: yellow;
+  background: blueviolet;
+  border-radius: 5px;
+}
+header .header-2 .share a {
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem;
+}
+header .header-2 .share a:hover {
+  color: #ff0;
+}
+header .header-2 #menu {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem;
+  display: none;
+}
+header .header-2 .header-active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1000px) {
+  header .header-2 #menu {
+    display: inline-block;
+  }
+  header .header-2 .navbar {
+    position: fixed;
+    top: -200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    opacity: 0;
+  }
+  header .header-2 .navbar ul {
+    flex-flow: column;
+    background: linear-gradient(skyblue, blueviolet);
+    border: 0.2rem solid #fff;
+    box-shadow: 0 0.3rem 0.5rem #000;
+    padding: 4rem 0;
+    width: 27rem;
+  }
+  header .header-2 .navbar ul li {
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+    display: block;
+  }
+  header .header-2 .navbar ul li a {
+    font-size: 2.7rem;
+    display: block;
+  }
+  header .header-2 .fa-times {
+    transform: rotate(180deg);
+  }
+  header .header-2 .nav-toggle {
+    top: 50%;
+    opacity: 1;
+  }
+} /*# sourceMappingURL=style.css.map */

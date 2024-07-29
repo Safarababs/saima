@@ -51,10 +51,12 @@ const PricingCards = () => {
                 <strong>For 2nd Sibling:</strong> {plan.feeForSecondSibling}
               </p>
               <p className="description">{plan.description}</p>
+              <a href="/register" className="btn">
+                Start Free Trial
+              </a>
             </div>
           ))}
         </div>
-        <button className="enrol-button">Start Free Trail now</button>
       </div>
 
       <Faq />
