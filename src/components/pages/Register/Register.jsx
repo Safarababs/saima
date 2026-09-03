@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Faq from "../../Faq/Faq";
-
+import { Link } from "react-router-dom";
 const RegistrationPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -299,10 +299,10 @@ const RegistrationPage = () => {
 
             <p className="note">
               Submitting your details indicates your agreement to our
-              <a href="/terms" target="_blank" rel="noopener noreferrer">
+              <Link to="/terms" target="_blank" rel="noopener noreferrer">
                 {" "}
                 Terms of Service
-              </a>
+              </Link>
               .
             </p>
 

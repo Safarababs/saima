@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const QuranicQaidaCourse = () => {
   return (
@@ -18,7 +19,7 @@ const QuranicQaidaCourse = () => {
                 <a href="/">Home</a>
               </li>
               <li className="breadcrumb-item">
-                <a href="/courses">Courses</a>
+                <Link to="/courses">Courses</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Quranic Qaida Course
@@ -69,7 +70,7 @@ const QuranicQaidaCourse = () => {
           </li>
           <li>
             <i className="fas fa-arrow-right"></i>
-            <strong>Age Level:</strong> At least 5 Years
+            <strong>Age Level:</strong> No Limit
           </li>
           <li>
             <i className="fas fa-arrow-right"></i>

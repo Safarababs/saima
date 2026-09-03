@@ -1,5 +1,6 @@
 import React from "react";
 import Faq from "../../Faq/Faq";
+import { Link } from "react-router-dom";
 
 const PricingCards = () => {
   const plans = [
@@ -51,9 +52,9 @@ const PricingCards = () => {
                 <strong>For 2nd Sibling:</strong> {plan.feeForSecondSibling}
               </p>
               <p className="description">{plan.description}</p>
-              <a href="/register" className="btn">
+              <Link to="/register" className="btn">
                 Start Free Trial
-              </a>
+              </Link>
             </div>
           ))}
         </div>

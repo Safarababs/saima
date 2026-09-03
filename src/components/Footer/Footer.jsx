@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -35,26 +36,26 @@ const Footer = () => {
                         can engage in one-on-one live sessions with highly
                         qualified and experienced teachers. This interactive
                         approach allows us to deliver personalized instruction
-                        that is both effective and inspiring.
-                        <a
-                          href="/terms"
+                        that is both effective and inspiring.<br></br>
+                        <Link
+                          to="/terms"
                           target="_blank"
                           rel="noopener noreferrer"
                           style={{
                             background: "white",
                             borderRadius: "10px",
-                            padding: ".2rem",
+                            padding: ".3rem",
                             color: "blue",
                           }}
                         >
                           {" "}
                           Terms of Service
-                        </a>
+                        </Link>
                       </p>
                       <div className="footer-btn d-flex">
                         <a
                           className=" btn-md-square rounded-circle me-3"
-                          href="https://www.facebook.com/almehdiquran"
+                          href="https://www.facebook.com/profile.php?id=100091821242239&mibextid=ZbWKwL"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -90,24 +91,24 @@ const Footer = () => {
                   <div className="col-md-6 col-lg-6 col-xl-3">
                     <div className="footer-item">
                       <h4 className="text-white mb-4">Useful Links</h4>
-                      <a href="/">
+                      <Link to="/">
                         <i className="fas fa-angle-right me-2"></i> About Us
-                      </a>
-                      <a href="/courses">
+                      </Link>
+                      <Link to="/courses">
                         <i className="fas fa-angle-right me-2"></i> Courses
-                      </a>
+                      </Link>
 
-                      <a href="/faqquestion">
+                      <Link to="/faqquestion">
                         <i className="fas fa-angle-right me-2"></i> FAQ
-                      </a>
+                      </Link>
 
-                      <a href="/contact">
+                      <Link to="/contact">
                         <i className="fas fa-angle-right me-2"></i> Contact Us
-                      </a>
+                      </Link>
 
-                      <a href="/register">
+                      <Link to="/register">
                         <i className="fas fa-angle-right me-2"></i> Register
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-md-6 col-lg-6 col-xl-4">

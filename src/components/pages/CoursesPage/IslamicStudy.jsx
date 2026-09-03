@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const IslamicStudiesForKids = () => {
   return (
@@ -18,7 +19,7 @@ const IslamicStudiesForKids = () => {
                 <a href="/">Home</a>
               </li>
               <li className="breadcrumb-item">
-                <a href="/courses">Courses</a>
+                <Link to="/courses">Courses</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Islamic Studies for Kids
@@ -65,11 +66,11 @@ const IslamicStudiesForKids = () => {
           </li>
           <li>
             <i className="fas fa-arrow-right"></i>
-            <strong>Class Duration:</strong> 30-45 minutes per session
+            <strong>Class Duration:</strong> 30 minutes per session
           </li>
           <li>
             <i className="fas fa-arrow-right"></i>
-            <strong>Age Level:</strong> 5-12 Years
+            <strong>Age Level:</strong> No-Limit
           </li>
           <li>
             <i className="fas fa-arrow-right"></i>

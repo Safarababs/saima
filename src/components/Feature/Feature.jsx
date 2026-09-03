@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Feature = () => {
   return (
     <>
@@ -40,12 +40,12 @@ const Feature = () => {
                   A trusted academy offering high-quality education, fostering
                   deep understanding and appreciation.
                 </p>
-                <a
+                <Link
                   className="btn btn-primary rounded-pill py-2 px-4"
-                  href="/contact"
+                  to="/contact"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -61,12 +61,12 @@ const Feature = () => {
                   We are An affordable academy and we are offering quality
                   education with accessibility, value, and excellence.
                 </p>
-                <a
+                <Link
                   className="btn btn-primary rounded-pill py-2 px-4"
-                  href="/contact"
+                  to="/contact"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -83,12 +83,12 @@ const Feature = () => {
                   convenient timing options for personalized learning
                   experiences.
                 </p>
-                <a
+                <Link
                   className="btn btn-primary rounded-pill py-2 px-4"
-                  href="/contact"
+                  to="/contact"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -104,12 +104,12 @@ const Feature = () => {
                   24/7 fast support, ensuring immediate assistance and guidance
                   for all queries for better education of you and your child.
                 </p>
-                <a
+                <Link
                   className="btn btn-primary rounded-pill py-2 px-4"
-                  href="/contact"
+                  to="/contact"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

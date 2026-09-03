@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   const handleSubmit = (e) => {
@@ -37,13 +38,13 @@ const ContactUs = () => {
     <>
       <div className="bg-breadcrumb">
         <nav className="breadcrumb">
-          <a href="/" className="breadcrumb-item">
+          <Link to="/" className="breadcrumb-item">
             Home
-          </a>
+          </Link>
           <span className="breadcrumb-separator">/</span>
-          <a href="/contact" className="breadcrumb-item">
+          <Link to="/contact" className="breadcrumb-item">
             Contact Us
-          </a>
+          </Link>
         </nav>
       </div>
       <div className="contact-us">

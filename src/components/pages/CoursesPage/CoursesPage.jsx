@@ -1,5 +1,6 @@
 import React from "react";
 import Courses from "../../Courses/Courses";
+import { Link } from "react-router-dom";
 
 const CoursesPage = () => {
   return (
@@ -20,7 +21,7 @@ const CoursesPage = () => {
             data-wow-delay="0.3s"
           >
             <li className="breadcrumb-item">
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
 
             <li className="breadcrumb-item active text-primary">Courses</li>
@@ -38,27 +39,31 @@ const CoursesPage = () => {
           <ul>
             <li>
               <i className="fas fa-star"></i>
-              <a href="noraniQaida">Basic Quranic Qaida Course</a>
+              <Link to="/noraniQaida">Basic Quranic Qaida Course</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="tajweed">Rules of tajweed Course</a>
+              <Link to="/tajweed">Rules of tajweed Course</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="Translation">Quran Translation Course</a>
+              <Link to="/Translation">Quran Translation Course</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="tafseer">Quran Tafseer Course</a>
+              <Link to="/tafseer">Quran Tafseer Course</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="hifz">Quran Memorisation Courses</a>
+              <Link to="/hifz">Quran Memorisation Courses</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="islamicstudy">Islamic Studies for kids Course</a>
+              <Link to="/islamicstudy">Islamic Studies for kids Course</Link>
+            </li>
+            <li>
+              <i className="fas fa-star"></i>
+              <Link to="/balagha">Nehjul Balagha course</Link>
             </li>
           </ul>
           <p>
@@ -68,9 +73,9 @@ const CoursesPage = () => {
             Quran from professional and qualified Quran tutors.
           </p>
           <p>Build up a life long relationship with Quran.</p>
-          <a href="/contact" className="btn">
+          <Link to="/contact" className="btn">
             Start Free Trial
-          </a>
+          </Link>
         </div>
       </section>
       <Courses />

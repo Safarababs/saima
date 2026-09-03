@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FemaleTeacher = () => {
   return (
@@ -15,10 +16,10 @@ const FemaleTeacher = () => {
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li className="breadcrumb-item">
-                <a href="/femaleteacher">Teachers</a>
+                <Link href="/femaleteacher">Teachers</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Female Teacher
@@ -114,27 +115,27 @@ const FemaleTeacher = () => {
           <ul>
             <li>
               <i className="fas fa-star"></i>
-              <a href="noraniQaida">Basic Noorani Qaida Course</a>
+              <Link href="noraniQaida">Basic Noorani Qaida Course</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="tajweed">Rules of Tajweed Course</a>
+              <Link href="tajweed">Rules of Tajweed Course</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="Translation">Quran Translation Course</a>
+              <Link href="Translation">Quran Translation Course</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="tafseer">Quran Tafseer Course</a>
+              <Link href="tafseer">Quran Tafseer Course</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="hifz">Quran Memorisation Courses</a>
+              <Link href="hifz">Quran Memorisation Courses</Link>
             </li>
             <li>
               <i className="fas fa-star"></i>
-              <a href="islamicstudy">Islamic Studies for Kids Course</a>
+              <Link href="islamicstudy">Islamic Studies for Kids Course</Link>
             </li>
           </ul>
           <p>

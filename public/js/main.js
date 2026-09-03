@@ -1,6 +1,3 @@
-// import "owl.carousel/dist/assets/owl.carousel.css";
-// import "owl.carousel/dist/assets/owl.theme.default.css";
-
 (function ($) {
   "use strict";
 
@@ -12,9 +9,9 @@
       }
     }, 1);
   };
-  spinner(0);
+  spinner();
 
-  // Initiate the wowjs
+  // Initiate the WOW.js
   new WOW().init();
 
   // Sticky Navbar
@@ -26,109 +23,91 @@
     }
   });
 
-  // Header carousel
-  $(".header-carousel").owlCarousel({
-    animateOut: "fadeOut",
-    items: 1,
-    margin: 0,
-    stagePadding: 0,
-    autoplay: true,
-    smartSpeed: 500,
-    dots: true,
-    loop: true,
-    nav: true,
-    navText: [
-      '<i class="bi bi-arrow-left"></i>',
-      '<i class="bi bi-arrow-right"></i>',
-    ],
-  });
+  $(document).ready(function () {
+    // Accordion
+    $(".accordion").click(function () {
+      $(this).toggleClass("active");
+    });
 
-  // testimonial carousel
-  $(".testimonial-carousel").owlCarousel({
-    autoplay: true,
-    smartSpeed: 1500,
-    center: false,
-    dots: false,
-    loop: true,
-    margin: 25,
-    nav: true,
-    navText: [
-      '<i class="fa fa-arrow-right"></i>',
-      '<i class="fa fa-arrow-left"></i>',
-    ],
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      576: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      992: {
-        items: 2,
-      },
-      1200: {
-        items: 2,
-      },
-    },
-  });
+    // Share button
+    $("#share").click(function () {
+      $(this).toggleClass("share-active");
+    });
 
-  // Facts counter
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 5,
-    time: 2000,
-  });
+    // Filter books
+    $(".controls li").click(function () {
+      let filter = $(this).attr("data-filter");
+      if (filter === "all") {
+        $(".books .box").show(400);
+      } else {
+        $(".books .box")
+          .not("." + filter)
+          .hide(200);
+        $(".books .box")
+          .filter("." + filter)
+          .show(400);
+      }
 
-  // Back to top button
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      $(".back-to-top").fadeIn("slow");
-    } else {
-      $(".back-to-top").fadeOut("slow");
-    }
-  });
-  $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
-    return false;
+      $(this).addClass("button-active");
+    });
+
+    // Header carousel
+    $(".header-carousel").owlCarousel({
+      animateOut: "fadeOut",
+      items: 1,
+      margin: 0,
+      stagePadding: 0,
+      autoplay: true,
+      smartSpeed: 500,
+      dots: true,
+      loop: true,
+      nav: true,
+      navText: [
+        '<i class="bi bi-arrow-left"></i>',
+        '<i class="bi bi-arrow-right"></i>',
+      ],
+    });
+
+    // Testimonial carousel
+    $(".testimonial-carousel").owlCarousel({
+      autoplay: true,
+      smartSpeed: 1500,
+      center: false,
+      dots: false,
+      loop: true,
+      margin: 25,
+      nav: true,
+      navText: [
+        '<i class="fa fa-arrow-right"></i>',
+        '<i class="fa fa-arrow-left"></i>',
+      ],
+      responsiveClass: true,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 1 },
+        768: { items: 2 },
+        992: { items: 2 },
+        1200: { items: 2 },
+      },
+    });
+
+    // Facts counter
+    $('[data-toggle="counter-up"]').counterUp({
+      delay: 5,
+      time: 2000,
+    });
+
+    // Back to top button
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".back-to-top").fadeIn("slow");
+      } else {
+        $(".back-to-top").fadeOut("slow");
+      }
+    });
+    $(".back-to-top").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
+      return false;
+    });
   });
 })(jQuery);
-
-$(document).ready(function () {
-  $(".accordion").click(function () {
-    $(this).toggleClass("active");
-  });
-
-  $("#menu").click(function () {
-    $(this).toggleClass("fa-times");
-    $(".navbar").toggleClass("nav-toggle");
-  });
-
-  $("#share").click(function () {
-    $(this).toggleClass("share-active");
-  });
-
-  $(window).on("load scroll", function () {
-    $(".fa-bars").removeClass("fa-times");
-    $(".navbar").removeClass("nav-toggle");
-    $("#share").removeClass("share-active");
-  });
-
-  $(".controls li").click(function () {
-    let filter = $(this).attr("data-filter");
-    if (filter == "all") {
-      $(".books .box").show(400);
-    } else {
-      $(".books .box")
-        .not("." + filter)
-        .hide(200);
-      $(".books .box")
-        .filter("." + filter)
-        .show(400);
-    }
-
-    $(this).addClass("button-active");
-  });
-});

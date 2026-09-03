@@ -15,7 +15,12 @@ import TermsOfService from "./pages/Terms of Service/TermsOfService";
 import ContactUs from "./pages/Contact/Contact";
 import FAQQuestion from "./pages/Faq Question/FaqQuestion";
 import BookList from "./Books/BookList";
+import QuranicQaidaCourse from "./pages/CoursesPage/NoraniQaidaCourse";
+
 import Header from "./Header/Header";
+import NehjulBalaghaCourse from "./pages/CoursesPage/Nehjul Balagha";
+import "owl.carousel/dist/assets/owl.carousel.min.css";
+import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
 const App = () => {
   return (
@@ -29,6 +34,8 @@ const App = () => {
         <Route path="/tafseer" element={<QuranTafseer />} />
         <Route path="/hifz" element={<QuranMemorisation />} />
         <Route path="/islamicstudy" element={<IslamicStudiesForKids />} />
+        <Route path="/balagha" element={<NehjulBalaghaCourse />} />
+        <Route path="/noraniQaida" element={<QuranicQaidaCourse />} />
         <Route path="/maleteacher" element={<MaleTeacher />} />
         <Route path="/femaleteacher" element={<FemaleTeacher />} />
         <Route path="/fee" element={<PricingCards />} />

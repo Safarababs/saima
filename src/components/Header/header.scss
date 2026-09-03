@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap&family=Noto Nastaliq Urdu&family=Dancing+Script:wght@700&display=swap");
+
+$green: #89cff0;
+$light-green: #40b5ad;
+$light-color: #777;
+$light-white: #eee;
+$black: black;
+$white: #fff;
+$border: 0.1rem solid $green;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+* {
+  font-family: "Nunito", "Noto Nastaliq Urdu" ، sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  text-transform: uppercase;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+// header section
+header {
+  padding-bottom: 2rem;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 100%;
+    z-index: 1000;
+    background: $green;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: $box-shadow;
+
+    a {
+      width: 6rem;
+      height: 6rem;
+      img {
+        margin-left: 4rem;
+        border-radius: 5rem;
+      }
+
+      cursor: pointer;
+    }
+
+    #menu {
+      font-size: 3rem;
+      color: $white;
+      cursor: pointer;
+      display: none;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          font-size: 2rem;
+          color: $white;
+          text-decoration: none;
+
+          &:active {
+            background: red;
+            border-radius: 2rem;
+          }
+
+          &:hover {
+            color: yellow;
+            background: $green;
+          }
+        }
+      }
+    }
+  }
+}
+
+// media queries
+@media (max-width: 550px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    .header {
+      a {
+        img {
+          margin-left: 0.1rem;
+        }
+      }
+      #menu {
+        display: inline-block;
+        margin-right: 2rem;
+      }
+
+      .navbar {
+        position: fixed;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.3);
+        z-index: 10000;
+        opacity: 0;
+
+        ul {
+          flex-flow: column;
+          background: $green;
+          border: 0.2rem solid #fff;
+          box-shadow: 0 0.3rem 0.5rem #000;
+          padding: 4rem 0;
+          width: 27rem;
+
+          li {
+            width: 100%;
+            margin: 1rem 0;
+            text-align: center;
+            display: block;
+
+            a {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+
+      .nav-toggle {
+        top: 50%;
+        opacity: 1;
+      }
+    }
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .login {
+    input {
+      width: 80%;
+    }
+
+    .button {
+      width: 80%;
+    }
+  }
+}

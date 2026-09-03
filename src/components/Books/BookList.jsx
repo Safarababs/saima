@@ -1,5 +1,8 @@
 import React from "react";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const BookList = () => {
   const books = [
     {
@@ -17,7 +20,36 @@ const BookList = () => {
       url: "books/3.pdf",
       image: "img/book3.jpg",
     },
-    // Add more books as needed
+    {
+      title: "Nehjul balagha",
+      url: "books/balagha.pdf",
+      image: "img/balagha.jpg",
+    },
+    {
+      title: "Sahifa Kamila",
+      url: "books/kamila.pdf",
+      image: "img/kamila.jpg",
+    },
+    {
+      title: "Mafatee ul Jinan",
+      url: "books/mafatee.pdf",
+      image: "img/Mafatee.jpg",
+    },
+    {
+      title: "Saheefa Sajadia",
+      url: "books/sajadia.pdf",
+      image: "img/sajadia.jpg",
+    },
+    {
+      title: "Tozee ul Masile ",
+      url: "books/tozee-rehbar.pdf",
+      image: "img/Tozee-Rahbar.jpg",
+    },
+    {
+      title: "Tozee ul Masile",
+      url: "books/tozee-sistani.pdf",
+      image: "img/Tozee-Sistani.jpg",
+    },
   ];
 
   return (
@@ -26,7 +58,7 @@ const BookList = () => {
       <div className="card-container">
         {books.map((book, index) => (
           <div key={index} className="card">
-            <img
+            <LazyLoadImage
               src={book.image}
               alt={`Cover of ${book.title}`}
               className="book-image"

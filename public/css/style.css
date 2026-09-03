@@ -1,18 +1,3 @@
-/*** Spinner Start ***/
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-  z-index: 99999;
-}
-
-#spinner.show {
-  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
-/*** Spinner End ***/
-
 .back-to-top {
   position: fixed;
   right: 30px;
@@ -104,170 +89,8 @@
   background: var(--bs-light);
 }
 
-/*** Topbar Start ***/
-.topbar .dropdown-toggle::after {
-  border: none;
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  vertical-align: middle;
-  margin-left: 8px;
-  color: var(--bs-primary);
-}
-
-.topbar .dropdown .dropdown-menu a:hover {
-  background: var(--bs-primary);
-  color: var(--bs-white);
-}
-
-.topbar .dropdown .dropdown-menu {
-  transform: rotateX(0deg);
-  visibility: visible;
-  background: var(--bs-light);
-  padding-top: 10px;
-  border: 0;
-  transition: 0.5s;
-  opacity: 1;
-}
-/*** Topbar End ***/
-
-/*** Navbar Start ***/
-
-.nav-bar {
-  background: var(--bs-white);
-  transition: 1s;
-}
-
-.navbar-light .navbar-brand img {
-  max-height: 60px;
-  transition: 0.5s;
-}
-
-.nav-bar .navbar-light .navbar-brand img {
-  max-height: 50px;
-}
-
-.navbar .navbar-nav .nav-item .nav-link {
-  padding: 0;
-}
-
-.navbar .navbar-nav .nav-item {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-}
-
-.navbar-light .navbar-nav .nav-item:hover,
-.navbar-light .navbar-nav .nav-item.active,
-.navbar-light .navbar-nav .nav-item:hover .nav-link,
-.navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: var(--bs-primary);
-}
-
-@media (max-width: 991px) {
-  .navbar {
-    padding: 20px 0;
-  }
-
-  .navbar .navbar-nav .nav-link {
-    padding: 0;
-  }
-
-  .navbar .navbar-nav .nav-item {
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-  }
-
-  .navbar .navbar-nav .nav-btn {
-    display: flex;
-    justify-content: start;
-  }
-
-  .navbar .navbar-nav {
-    width: 100%;
-    display: flex;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    background: var(--bs-light);
-    border-radius: 10px;
-  }
-
-  .navbar.navbar-expand-lg .navbar-toggler {
-    padding: 8px 15px;
-    border: 1px solid var(--bs-primary);
-    color: var(--bs-primary);
-  }
-}
-
-.navbar .dropdown-toggle::after {
-  border: none;
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  vertical-align: middle;
-  margin-left: 8px;
-}
-
-.dropdown .dropdown-menu .dropdown-item:hover {
-  background: var(--bs-primary);
-  color: var(--bs-white);
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    padding: 20px 0;
-  }
-
-  .navbar .nav-btn {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  }
-
-  .navbar .navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--bs-light);
-    border-radius: 10px;
-  }
-
-  .navbar .navbar-nav .nav-btn {
-    width: 100%;
-    display: flex;
-    margin-left: auto;
-  }
-
-  .navbar .nav-item .dropdown-menu {
-    display: block;
-    visibility: hidden;
-    top: 100%;
-    transform: rotateX(-75deg);
-    transform-origin: 0% 0%;
-    border: 0;
-    border-radius: 10px;
-    transition: 0.5s;
-    opacity: 0;
-  }
-
-  .navbar .nav-item:hover .dropdown-menu {
-    transform: rotateX(0deg);
-    visibility: visible;
-    margin-top: 20px;
-    background: var(--bs-light);
-    transition: 0.5s;
-    opacity: 1;
-  }
-}
-/*** Navbar End ***/
-
-/*** Carousel Hero Header Start ***/
 .header-carousel .header-carousel-item {
-  height: 90vh;
+  height: 100vh;
 }
 
 .header-carousel .owl-nav .owl-prev,
@@ -350,13 +173,13 @@
 .bg-breadcrumb {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)),
-    url(../img/bg-breadcrumb.jpg);
+  background: #0056b3 url(../img/bg-breadcrumb.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 0 60px 0;
   transition: 0.5s;
+  margin: 4.5rem 0;
 }
 
 .bg-breadcrumb .breadcrumb {
@@ -456,7 +279,7 @@
 
 /* Breadcrumb Section */
 .bg-breadcrumb {
-  background: linear-gradient(135deg, #0056b3, #005); /* Gradient background */
+  background-color: #e3ca9c; /* Gradient background */
   padding: 2rem 0; /* Increased padding */
 }
 
@@ -591,7 +414,7 @@ btn:hover {
 /* Hero Section */
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #0056b3, #005);
+  background: #0056b3;
   padding: 4rem 1.5rem; /* Padding for top and bottom */
   text-align: center; /* Center-align text */
   color: #ffffff; /* White text color */
@@ -833,6 +656,7 @@ ol li i {
   padding: 40px;
   background-color: #f8f9fa;
   text-align: center;
+  margin: 4.5rem 0;
 }
 
 .pricing-cards h2 {
@@ -998,7 +822,7 @@ ol li i {
 /* Overall page styling */
 .registration-page {
   max-width: 95%;
-  margin: 0 auto;
+  margin: 4.5rem auto;
   padding: 20px;
   background: linear-gradient(135deg, #e0f7fa, #ffebee);
   border-radius: 15px;
@@ -1755,8 +1579,9 @@ input[type="radio"]:checked + label {
 /*** FAQs Start ***/
 .faq-section .accordion .accordion-item .accordion-header .accordion-button {
   color: var(--bs-white);
-  background: rgba(1, 95, 201, 0.8);
+  background: #0056b3;
   font-size: 18px;
+  margin: 3.5rem 0;
 }
 
 .faq-section
@@ -1997,7 +1822,7 @@ input[type="radio"]:checked + label {
 /* books corner start */
 .book-list-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 4.5rem auto;
   padding: 20px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
@@ -2150,124 +1975,3 @@ input[type="radio"]:checked + label {
   border-top: 1px solid rgb(255, 255, 255);
 }
 /*** copyright end ***/
-
-/* header panga */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap");
-header .header-1 .form-container .marquee {
-  width: 100vw;
-  line-height: 30px;
-  color: #000;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-header .header-1 .form-container .marquee p {
-  display: inline-block;
-  font-size: 2.5rem;
-  animation: marquee 20s linear infinite;
-}
-@font-face {
-  font-family: "Attari_Quran Regular";
-  src: url("./fonts/Attari_Quran Regular.ttf") format("truetype");
-}
-@keyframes marquee {
-  0% {
-    transform: translate(-100%, 0);
-  }
-  100% {
-    transform: translate(100%, 0);
-  }
-}
-header .header-2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem;
-  width: 100%;
-  z-index: 1000;
-  background: linear-gradient(skyblue, blueviolet);
-  top: 0;
-  right: 0;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-header .header-2 .navbar ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-}
-header .header-2 .navbar ul li {
-  margin: 1rem;
-}
-header .header-2 .navbar ul li a {
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: none;
-}
-header .header-2 .navbar ul li a:hover,
-header .header-2 .navbar ul li a .active {
-  color: yellow;
-  background: blueviolet;
-  border-radius: 5px;
-}
-header .header-2 .share a {
-  font-size: 2rem;
-  color: #fff;
-  margin: 1rem;
-}
-header .header-2 .share a:hover {
-  color: #ff0;
-}
-header .header-2 #menu {
-  font-size: 3rem;
-  color: #fff;
-  cursor: pointer;
-  margin: 1rem;
-  display: none;
-}
-header .header-2 .header-active {
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 1000px) {
-  header .header-2 #menu {
-    display: inline-block;
-  }
-  header .header-2 .navbar {
-    position: fixed;
-    top: -200%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.3);
-    z-index: 10000;
-    opacity: 0;
-  }
-  header .header-2 .navbar ul {
-    flex-flow: column;
-    background: linear-gradient(skyblue, blueviolet);
-    border: 0.2rem solid #fff;
-    box-shadow: 0 0.3rem 0.5rem #000;
-    padding: 4rem 0;
-    width: 27rem;
-  }
-  header .header-2 .navbar ul li {
-    width: 100%;
-    margin: 1rem 0;
-    text-align: center;
-    display: block;
-  }
-  header .header-2 .navbar ul li a {
-    font-size: 2.7rem;
-    display: block;
-  }
-  header .header-2 .fa-times {
-    transform: rotate(180deg);
-  }
-  header .header-2 .nav-toggle {
-    top: 50%;
-    opacity: 1;
-  }
-} /*# sourceMappingURL=style.css.map */

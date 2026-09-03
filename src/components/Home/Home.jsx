@@ -1,5 +1,6 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -33,18 +34,18 @@ const Home = () => {
                       Trained Teachers and Money Back Guarantee.
                     </p>
                     <div className="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                      <a
+                      <Link
                         className=" btn-light rounded-pill py-3 px-4 px-md-5 me-2"
-                        href="/register"
+                        to="/register"
                       >
                         Register Now
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className=" btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
-                        href="/contact"
+                        to="/contact"
                       >
                         Start Free Trial
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
